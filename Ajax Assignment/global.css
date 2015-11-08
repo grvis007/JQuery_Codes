@@ -1,0 +1,16 @@
+#registerPage{
+    width:450px; /*how broad the calculator is*/
+    height:510px;/*vertical size of calculator*/
+    border:1px solid black; /*width size style and color*/
+    background: lightgreen;
+    margin:50px auto;/*margin from top is 150px and auto is for left and right.if you want to center any element then auto is used */
+    box-shadow: 0px 0px 30px gray;/* box shadow is a html property to give shadow to HTML elements.Normally it takes 4 va*/
+}
+#signinpage{
+    width:450px; /*how broad the calculator is*/
+    height:180px;/*vertical size of calculator*/
+    border:1px solid black; /*width size style and color*/
+    background: lightgreen;
+    margin:50px auto;/*margin from top is 150px and auto is for left and right.if you want to center any element then auto is used */
+    box-shadow: 0px 0px 30px gray;
+}

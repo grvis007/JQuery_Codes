@@ -1,0 +1,31 @@
+a {
+    border:1px dashed blue;
+}
+
+footer{
+    border:1px dashed blue;
+    text-align: center;
+}
+
+aside {
+    float: right;
+    width: 200px;
+    padding: 10px;
+    top: 0px;
+    bottom: 0px;
+    box-shadow: inset -8px 0 10px -6px #ddd;
+}
+
+body {
+    background-color: #EBE8E4;
+    color: #222;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    width:950px; /*how broad the calculator is*/
+    height:450px;/*vertical size of calculator*/
+    border:1px dashed blue;
+    margin:auto;
+
+}
+

@@ -1,0 +1,27 @@
+#video_player_box{ width:550px; background:#000; margin:0px auto;}
+#video_controls_bar{ background: #333; padding:10px; color:#CCC; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;}
+#playpausebtn{
+    background:url("http://www.lacelesteblog.com/wp-content/uploads/2011/05/pause.jpg");
+    border:none;
+    width:16px;
+    height:18px;
+
+
+}
+#playpausebtn:hover{ opacity:1; }
+#seekslider{ width:180px; }
+#volumeslider{ width: 80px;}
+input[type='range'] {
+    -webkit-appearance: none !important;
+    background: #000;
+    border:#666 1px solid;
+    height:4px;
+}
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background: #FFF;
+    height:15px;
+    width:15px;
+    border-radius:100%;
+    cursor:pointer;
+}
