@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> User Registration</title>
+    <link rel="stylesheet" href="MyStyles/jquery-ui.css">
+    <script src="lib/jquery-2.1.4.min.js"></script>
+    <script src="lib/jquery-ui.js"></script>
+</head>
+<body>
+<table border="1px">
+    <tr>
+        <td><label>First Name-</label></td>
+        <td><input type="text" id="txtFName"></td>
+        <td><label id="lblFirstNameError" style="display: none"> Please enter First Name</label></td>
+    </tr>
+    <tr>
+        <td><label>Last Name-</label></td>
+        <td><input type="text" id="txtLName"></td>
+            <td><label id="lblLastNameError"></label></td>
+    </tr>
+    <tr>
+        <td><label>Date Of Birth- </label></td>
+        <td><input type="text" id="txtDOBDate"></td>
+        <td><label id="lblDOBError"></label></td>
+    </tr>
+    <tr>
+        <td><label>City-</label></td>
+        <td><input type="text" id="txtCity"></td>
+        <td><label id="lblCityError"></label></td>
+    </tr>
+    <tr>
+        <td><label>State-</label></td>
+        <td><select id="myState">
+            <option value=""></option>
+            <option value="New Jersey">New Jersey</option>
+            <option value="New York">New York</option>
+            <option value="Missouri">Missouri</option>
+            <option value="Kansas">Kansas</option>
+        </select>
+        <td><label id="lblStateError"></label></td>
+
+    </tr>
+    <tr>
+        <td><label>Zip-</label></td>
+        <td><input type="text" id="txtZip" ></td>
+        <td><label id="lblZipError"></label></td>
+    </tr>
+
+</table>
+
+<input type="button" id="btnSubmit" value="Submit">
+<script src="scripts/userreg.js"></script>
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+
+<body>
+<html>
+<style>
+    /* Reset */
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {display: block;}
+    body {line-height: 1;}
+    ol, ul {list-style: none;}
+    blockquote, q {quotes: none;}
+    blockquote:before, blockquote:after,
+    q:before, q:after {content: ''; content: none;}
+    table {border-collapse: collapse; border-spacing: 0;}
+    /*reset end*/
+
+    body {background-color: #ffffff; line-height: 1;  margin: 0 auto; width: 976px;}
+    .headerMain {width: 100%; margin-bottom: 40px; margin-top: 20px;}
+    #headerMain1, #headerMain3 {width: 20%; vertical-align: middle; text-align: left;}
+    #headerMain2 {width: 60%; text-align: left;}
+    .headerStore {font-family:"Calibri",serif;font-size:12px;color:rgb(0,0,0);font-weight:bold;font-style:normal; line-height: 16px;}
+    .blue {color: #0000FF;}
+    @media print {thead {display: table-header-group;}}
+    .InfoBox {border: 1px solid black; width: 99%; margin-bottom: 10px;}
+    .sectionHeader {background-color: black; width: 100%; height: 40px; border-top: 2px solid #355B8A; border-bottom: 2px solid #355B8A;}
+    .sectionHeader h2 {color: #ffffff; font-family:"Calibri",serif;font-size:20px;font-weight:normal;font-style:normal; margin-top: 0px; padding-top: 5px; padding-left: 5px;}
+    .blueHeader {color: #0000FF; font-family:"Calibri",serif;font-size:18px;font-weight:normal;font-style:normal; margin-left: 5px;}
+    .sectionText {font-family: "Calibri",serif; font-size: 16px; font-weight: normal; font-style: normal;}
+    .mainDeposits {line-height: 24px; margin: 20px auto 30px 30px; width: 700px;}
+    .mainDepositsRow {margin-bottom: 10px;}
+    .mainDepositsLeft { width: 30px; }
+    .mainDepositsRight {width: 370px; padding-left: 30px;}
+    .line {font-family: "Calibri",serif; font-size: 18px; font-weight: bold; font-style: normal; margin-bottom: 10px;}
+    .lineESN {font-family: "Calibri",serif; font-size: 14px; font-weight: normal; font-style: normal; margin-bottom: 20px;}
+    .lineDeposit {font-family: "Calibri",serif; font-size: 16px; font-weight: normal; font-style: normal; float: left; width: 450px; margin-bottom: 30px;}
+    .lineDeposit.even {margin-left: 40px;}
+    .lineDeposit.odd {}
+    .lineDeposit .LeftCol {float: left; width: 100px; }
+    .lineDeposit .RightCol {float: right;}
+    .lineBlue {margin-left: 20px; color: #0000FF;}
+    .lineTable {display: inline; width: 100%; float: left; margin-left: 10px; margin-bottom: 30px;}
+    .standardTableContainer { float: left; width: 820px;}
+    .standardTable {margin: 10px; width: 380px; display: inline-table; }
+    .standardTable td {width: 50%}
+    .carrierLogoContainer { float: left; padding: 10px 10px;}
+    .sectionNormalText {font-family: "Calibri",serif; font-size: 16px; font-style: normal; font-weight: normal; margin-bottom: 7px;}
+    #deviceBlockLeft {width: 15%; vertical-align: top; text-align: left; font-family: "Calibri",serif; font-size: 20px; font-style: normal; font-weight: normal;}
+    #DeviceBlockRight {width: 20%; vertical-align: middle; text-align: left; font-family: "Calibri",serif; font-size: 18px; font-style: normal; font-weight: bold;}
+    #deviceBlockCenter {width: 65%; text-align: left;}
+    .planDetailsTable {font-family: "Calibri",serif; font-size: 16px; font-style: normal; font-weight: normal; width: 100%; margin: 5px 3px;}
+    .innerPlanDetailsTable {display: inline-table; width: 250px;}
+    .innerPlanDetailsTableTop {width: 650px;}
+    .innerPlanDetailsTableLeft {width: 155px;}
+    .innerInfoBox {border: 1px solid black; margin: 10px;}
+    .lineHeader {text-align: left; font-family: "Calibri",serif; font-size: 20px; font-style: normal; font-weight: bold;}
+    .lineDeviceHeader {font-family: "Calibri",serif; font-size: 16px; font-style: normal; font-weight: normal; margin-bottom: 7px; margin-left: 125px;}
+    .lineDeviceDetails {margin-left: 125px;}
+    .lineDeviceDetailsTable {display: inline-table; width: 350px;}
+    #repeaterContainer {margin-left: -110px; margin-top: 50px; width: 976px;}
+    .sectionbarCode {margin-left: 100px;}
+    .topAlign {vertical-align: top;}
+
+    .innerRetailerInformation { min-height: 150px; }
+    .Clearer {clear: both;}
+    .SignatureBox {   }
+    .SignatureBox .FloatingBlock {display: block; float: left; margin: 20px 10px; }
+    .SignatureBox .FloatingBlock.Right { margin-left: 300px;}
+    .SignatureBox .LeftCol {width: 100px; float: left; }
+    .SignatureBox .RightCol {width: 200px; float: left; }
+    .SignatureWindow { width: 200px; height: 50px; border: 1px solid black; }
+    .DateLine { width: 200px;height: 30px;border-bottom: 1px solid black; }
+    span.SignatureLabel { width: 80px; display: block; line-height: 28px; }
+
+</style>
+
+<body>
+
+<table class="headerMain">
+    <thead>
+    <tr>
+        <th id="headerMain1">
+            <div class="headerLogo"><img src="/images/Partners/PartnerLogos/036660_Logo.gif" /></div>
+        </th>
+        <th id="headerMain2">
+            <div class="headerStore">Store Number: 0 (Default)</div>
+
+            <div class="headerStore">5801 Leesburg Pike  Baileys, VA 22041| 703-845-5600</div>
+
+            <div class="headerStore"><span class="blue">Order Number: 68121440 </span>| nodepositrequired Tester | Associate Name/ID: IPCFCDOM\svcomsstage</div>
+        </th>
+        <th id="headerMain3">
+            <div class="barCode">
+                <img src="https://resstage01.cellstores.com/barcode/ordernumber/68121440.png" />
+            </div>
+        </th>
+    </tr>
+    </thead>
+</table>
+
+<div class="InfoBox">
+    <div class="sectionHeader"><h2>Contract Information</h2></div>
+    <div class="standardTableContainer">
+        <table class="standardTable">
+            <tr>
+                <td>
+                    <div class="sectionNormalText">Carrier:</div>
+                </td>
+                <td>
+                    <div class="sectionNormalText">Sprint</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="sectionNormalText">Order Date:</div>
+                </td>
+                <td>
+                    <div class="sectionNormalText">5/9/2013</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="sectionNormalText">Account #:</div>
+                </td>
+                <td>
+                    <div class="sectionNormalText">3421457</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="sectionNormalText">Contract Start Date:</div>
+                </td>
+                <td>
+                    <div class="sectionNormalText"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="sectionNormalText">Contract End Date:</div>
+                </td>
+                <td>
+                    <div class="sectionNormalText"></div>
+                </td>
+            </tr>
+        </table>
+
+        <table class="standardTable">
+
+            <tr>
+                <td>
+                    <div class="sectionNormalText">Contract Duration:</div>
+                </td>
+                <td>
+                    <div class="sectionNormalText">0</div>
+                </td>
+            </tr>
+        </table>
+
+        <table class="standardTable">
+            <tr>
+                <td>
+                    <div class="sectionNormalText">Billed to: nodepositrequired  Tester</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="sectionNormalText">123 Main St.</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="sectionNormalText">Upper Marlboro, MD, 20774</div>
+                </td>
+            </tr>
+        </table>
+
+        <table class="standardTable">
+            <tr>
+                <td>
+                    <div class="sectionNormalText">Primary User: nodepositrequired  Tester</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="sectionNormalText">123 Main St.</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="sectionNormalText">Upper Marlboro, MD, 20774</div>
+                </td>
+            </tr>
+        </table>
+
+        <table class="standardTable">
+
+        </table>
+
+        <table class="standardTable">
+            <tr>
+                <td>
+                    <div class="sectionNormalText">Email Address: in.anaganna@rebid.com</div>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="carrierLogoContainer">
+        <img src="/_images/ads/10186/images/vz_logo.jpg" />
+    </div>
+    <div class="Clearer"></div>
+</div>
+
+<div class="InfoBox">
+    <div class="sectionHeader"><h2>Wireless Devices to be Purchased</h2></div>
+    <div class="innerInfoBox">
+        <div class="lineHeader">Line 1</div>
+        <div class="lineDeviceHeader">Device Name: LG Optimus G</div>
+        <div class="lineDeviceDetails">
+            <table class="lineDeviceDetailsTable">
+                <tr>
+                    <td class="">
+                        <div class="sectionNormalText">ESN: 45612378912</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="">
+                        <div class="sectionNormalText">Mobile Number:</div>
+                    </td>
+                    <td>
+                        <div class="sectionNormalText">3473769444</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="">
+                        <div class="sectionNormalText">Activation Date:</div>
+                    </td>
+                    <td>
+                        <div class="sectionNormalText">5/9/2013</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="">
+                        <div class="sectionNormalText">Contract Duration:</div>
+                    </td>
+                    <td>
+                        <div class="sectionNormalText">24</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="">
+                        <div class="sectionNormalText">Early Termination Fee:</div>
+                    </td>
+                    <td>
+                        <div class="sectionNormalText">Up To $350.00</div>
+                    </td>
+                </tr>
+            </table>
+            <table class="lineDeviceDetailsTable">
+                <tr>
+                    <td class="">
+                        <div class="sectionNormalText">SIM: </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="">
+                        <div class="sectionNormalText">Monthly Line Access Fee:</div>
+                    </td>
+                    <td>
+                        <div class="sectionNormalText">$20</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="">
+                        <div class="sectionNormalText">Fee:</div>
+                    </td>
+                    <td>
+                        <div class="sectionNormalText">$10</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="InfoBox">
+    <div class="sectionHeader"><h2>Retailer Information</h2></div>
+    <div class="innerRetailerInformation">
+        <div class="blueHeader">Retailer Information</div>
+    </div>
+</div>
+<div class="SignatureBox">
+    <div class="FloatingBlock">
+        <div class="LeftCol">
+            <span class="SignatureLabel">Customer Signature</span>
+            <span class="SignatureLabel">Date</span>
+        </div>
+        <div class="RightCol">
+            <div class="SignatureWindow"></div>
+            <div class="DateLine"></div>
+        </div>
+        <div class="Clearer"></div>
+    </div>
+    <div class="FloatingBlock Right">
+        <div class="LeftCol">
+            <span class="SignatureLabel">Store Associate</span>
+            <span class="SignatureLabel">Date</span>
+        </div>
+        <div class="RightCol">
+            <div class="SignatureWindow"></div>
+            <div class="DateLine"></div>
+        </div>
+        <div class="Clearer"></div>
+    </div>
+    <div class="Clearer"></div>
+</div>
+
+<div class="InfoBox">
+    <div class="sectionHeader"><h2>Carrier Information</h2></div>
+    <div class="innerRetailerInformation">
+        <div class="blueHeader">Wireless Service Agreement </div>
+    </div>
+</div>
+<div class="SignatureBox">
+    <div class="FloatingBlock">
+        <div class="LeftCol">
+            <span class="SignatureLabel">Customer Signature</span>
+            <span class="SignatureLabel">Date</span>
+        </div>
+        <div class="RightCol">
+            <div class="SignatureWindow"></div>
+            <div class="DateLine"></div>
+        </div>
+        <div class="Clearer"></div>
+    </div>
+    <div class="FloatingBlock Right">
+        <div class="LeftCol">
+            <span class="SignatureLabel">Store Associate</span>
+            <span class="SignatureLabel">Date</span>
+        </div>
+        <div class="RightCol">
+            <div class="SignatureWindow"></div>
+            <div class="DateLine"></div>
+        </div>
+        <div class="Clearer"></div>
+    </div>
+    <div class="Clearer"></div>
+</div>
+
+<div class="InfoBox">
+    <div class="sectionHeader"><h2>Point of Sale Information</h2></div>
+    <div class="innerRetailerInformation">
+        <div class="blueHeader">Instructions for the in-store associate.</div>
+        <table class="mainDeposits">
+            <tr class="mainDepositsRow">
+                <td class="mainDepositsLeft">
+                    <div class="sectionText">Order Number</div>
+                </td>
+                <td class="mainDepositsRight">
+                    <div class="sectionbarCode"><img src="https://resstage01.cellstores.com/barcode/ordernumber/68121440.png" /></div>
+                </td>
+            </tr>
+            <tr class="mainDepositsRow">
+                <td class="mainDepositsLeft">
+                    <div class="sectionText">Account Number</div>
+                </td>
+                <td class="mainDepositsRight">
+                    <div class="sectionbarCode"><img src="https://resstage01.cellstores.com/barcode/mdn/3421457.png" /></div>
+                    <div id="repeaterContainer">
+                        <div class="lineTable">
+                            <div class="line">Line 1 <span class="lineBlue">$20</span></div>
+
+                            <div class="lineDeposit odd">
+                                <div class="LeftCol">
+                                    <span class="topAlign">ESN/IMEI</span>
+                                </div>
+                                <div class="RightCol">
+                                    <img src="https://resstage01.cellstores.com/barcode/esn/45612378912.png" />
+                                </div>
+                            </div>
+
+
+                            <div class="lineDeposit even">
+                                <div class="LeftCol">
+                                    <span class="topAlign">Mobile Number</span>
+                                </div>
+                                <div class="RightCol">
+                                    <img src="https://resstage01.cellstores.com/barcode/mdn/3473769444.png" />
+                                </div>
+                            </div>
+                            <div class="lineDeposit odd">
+                                <div class="LeftCol">
+                                    <span class="topAlign">Manufacturer Model</span>
+                                </div>
+                                <div class="RightCol">
+                                    <img src="https://resstage01.cellstores.com/barcode/model/LG Optimus G.png" />
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
+</body>
+</html>

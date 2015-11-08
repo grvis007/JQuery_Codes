@@ -1,0 +1,26 @@
+body {
+
+    color: lightgray;
+}
+
+.lbl-medium {
+
+    font-size: 16px;
+    padding: 5%;
+}
+
+.lbl-large {
+font-size: 24px;
+ padding: 5%;
+}
+
+.div-label {
+    border: solid 1px ;
+    width: 50%;
+}
+
+.txt-medium {
+
+  margin: 5px 5px 5px 5px;
+    padding: 5%;
+}
